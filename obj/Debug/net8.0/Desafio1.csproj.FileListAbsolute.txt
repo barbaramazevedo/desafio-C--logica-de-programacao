@@ -1,0 +1,14 @@
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\bin\Debug\net8.0\Desafio1.exe
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\bin\Debug\net8.0\Desafio1.deps.json
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\bin\Debug\net8.0\Desafio1.runtimeconfig.json
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\bin\Debug\net8.0\Desafio1.dll
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\bin\Debug\net8.0\Desafio1.pdb
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\Desafio1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\Desafio1.AssemblyInfoInputs.cache
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\Desafio1.AssemblyInfo.cs
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\Desafio1.csproj.CoreCompileInputs.cache
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\Desafio1.dll
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\refint\Desafio1.dll
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\Desafio1.pdb
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\Desafio1.genruntimeconfig.cache
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\ref\Desafio1.dll
