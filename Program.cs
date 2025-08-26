@@ -1,25 +1,56 @@
-﻿namespace Desafio1
+﻿﻿namespace Desafio1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.Write($"Digite a hora inicial do jogo:");
-            int horaInicial = int.Parse(Console.ReadLine());
+            Console.Write($"Digite o primeiro valor:");
+            decimal valueOne = Convert.ToDecimal(Console.ReadLine());
+            Console.Write($"Digite o segundo valor:");
+            decimal valueTwo = Convert.ToDecimal(Console.ReadLine());
 
-            Console.Write($"Digite a hora final do jogo:");
-            int horaFinal = int.Parse(Console.ReadLine());
+            while (valueOne == valueTwo)
+            {
+                Console.Write("Os valores são iguais, digite um valor diferente para o segundo valor: ");
+                valueTwo = Convert.ToDecimal(Console.ReadLine());
+            }
 
-            int duracao;
-            if (horaInicial < horaFinal)
+            decimal soma = valueOne + valueTwo;
+            decimal subtracao = valueOne - valueTwo;
+            decimal multiplicacao = valueOne * valueTwo;
+
+
+
+            
+
+            Console.WriteLine($"Digite o tipo de operação que deseja realizar: \n 1 - Soma \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão");
+            int operacao = Convert.ToInt32(Console.ReadLine());
+            switch (operacao)
             {
-                duracao = horaFinal - horaInicial;
+                case 1:
+                    Console.WriteLine($"Valor da soma dos dois valores: {soma}");
+                    break;
+                case 2:
+                    Console.WriteLine($"Valor da subtração dos dois valores: {subtracao}");
+                    break;
+                case 3:
+                    Console.WriteLine($"Valor da multiplicação dos dois valores: {multiplicacao}");
+                    break;
+                case 4:
+                    if (valueTwo == 0)
+                    {
+                        Console.WriteLine("Não é possível realizar a divisão por zero.");
+                    }
+                    else
+                    {
+                        decimal divisao = valueOne / valueTwo;
+                        Console.WriteLine($"Valor da divisão dos dois valores: {divisao}");
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Operação inválida.");
+                    break;
             }
-            else
-            {
-                duracao = 24 - horaInicial + horaFinal;
-            }
-            Console.WriteLine($"O jogo durou {duracao} hora(s)");
         }
     }
 }
