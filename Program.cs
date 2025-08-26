@@ -4,19 +4,28 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite a quantidade de segundos para converter ao formato HH:MM:SS:");
-            int segundos = int.Parse(Console.ReadLine());
+            string[] nomes = { "barbara", "renata", "paula", "julia", "amanda", "larissa", "sofia" };
 
-            if (segundos < 0)
+            Console.WriteLine("Digite um nome para verificar no sistema:");
+            string nomeRecebido = Console.ReadLine();
+
+            bool nomeEncontrado = false;
+            foreach (string nome in nomes)
             {
-                Console.WriteLine("Por favor, insira um número inteiro não negativo.");
-                return;
+                if (nome.Equals(nomeRecebido, StringComparison.OrdinalIgnoreCase))
+                {
+                    nomeEncontrado = true;
+                    break;
+                }
             }
-            int horas = segundos / 3600;
-            int minutos = (segundos % 3600) / 60;
-            int segs = segundos % 60;
-            Console.WriteLine($"{horas:D2}:{minutos:D2}:{segs:D2}");
-            
+            if (nomeEncontrado)
+            {
+                Console.WriteLine($"O nome {nomeRecebido} foi encontrado no sistema.");
+            }
+            else
+            {
+                Console.WriteLine($"O nome {nomeRecebido} não foi encontrado no sistema.");
+            }            
         }
     }
 }
