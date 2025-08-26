@@ -4,42 +4,19 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite um valor para efetuar o saque:");
-            int valor = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a quantidade de segundos para converter ao formato HH:MM:SS:");
+            int segundos = int.Parse(Console.ReadLine());
 
-            var resultado = Sacar(valor);
-
-            Console.WriteLine("\nCédulas entregues:");
-            foreach (var item in resultado)
+            if (segundos < 0)
             {
-                Console.WriteLine($"{item.Value} cédula(s) de R$ {item.Key}");
+                Console.WriteLine("Por favor, insira um número inteiro não negativo.");
+                return;
             }
-
-
-
-            static Dictionary<int, int> Sacar(int valor)
-            {
-                int[] cedulas = { 200, 100, 50, 20, 10, 5, 2 };
-                Dictionary<int, int> relacaoCedulas = new Dictionary<int, int>();
-
-                int restante = valor;
-
-                foreach (int nota in cedulas)
-                {
-                    if (restante >= nota)
-                    {
-                        int quantidade = restante / nota;
-                        relacaoCedulas[nota] = quantidade;
-                        restante %= nota;
-                    }
-                }
-
-                if (restante != 0)
-                {
-                    Console.WriteLine("Não é possível sacar o valor exato com as cédulas disponíveis. Valor restante: R$ " + restante);
-                }
-                return relacaoCedulas;
-            }
+            int horas = segundos / 3600;
+            int minutos = (segundos % 3600) / 60;
+            int segs = segundos % 60;
+            Console.WriteLine($"{horas:D2}:{minutos:D2}:{segs:D2}");
+            
         }
     }
 }
