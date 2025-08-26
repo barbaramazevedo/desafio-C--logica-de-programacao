@@ -1,0 +1,3 @@
+# Desafio 1
+
+Escreva um algoritmo que receba como entrada três números que serão armazenados nas variáveis `valueOne`, `valueTwo` e `valueThree` respectivamente. Tendo esses valores, mostre-os na tela na ordem em que estão armazenados. Mostre também, as trocas, em que ao final `valueTwo` assuma o valor de `valueThree`, `valueThree` assuma o valor de `valueOne` e `valueOne` assuma o valor de `valueTwo`.
