@@ -4,28 +4,37 @@
     {
         static void Main(string[] args)
         {
-            string[] nomes = { "barbara", "renata", "paula", "julia", "amanda", "larissa", "sofia" };
+            int[] numeros = { 5, -7, 10, 3, 8, 2, -1, 4, -9, 6 };
 
-            Console.WriteLine("Digite um nome para verificar no sistema:");
-            string nomeRecebido = Console.ReadLine();
+            int pares = 0;
+            int impares = 0;
+            int positivos = 0;
+            int negativos = 0;
 
-            bool nomeEncontrado = false;
-            foreach (string nome in nomes)
+            foreach (int numero in numeros)
             {
-                if (nome.Equals(nomeRecebido, StringComparison.OrdinalIgnoreCase))
+                if (numero % 2 == 0)
                 {
-                    nomeEncontrado = true;
-                    break;
+                    pares++;
+                }
+                else
+                {
+                    impares++;
+                }
+
+                if (numero > 0)
+                {
+                    positivos++;
+                }
+                else if (numero < 0)
+                {
+                    negativos++;
                 }
             }
-            if (nomeEncontrado)
-            {
-                Console.WriteLine($"O nome {nomeRecebido} foi encontrado no sistema.");
-            }
-            else
-            {
-                Console.WriteLine($"O nome {nomeRecebido} não foi encontrado no sistema.");
-            }            
+            Console.WriteLine($"Quantidade de números pares: {pares}");
+            Console.WriteLine($"Quantidade de números ímpares: {impares}");
+            Console.WriteLine($"Quantidade de números positivos: {positivos}");
+            Console.WriteLine($"Quantidade de números negativos: {negativos}");
         }
     }
 }
