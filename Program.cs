@@ -5,20 +5,34 @@
         static void Main(string[] args)
         {
             Console.Write($"Digite o primeiro valor:");
-            int valueOne = int.Parse(Console.ReadLine());
+            decimal valueOne = Convert.ToDecimal(Console.ReadLine());
             Console.Write($"Digite o segundo valor:");
-            int valueTwo = int.Parse(Console.ReadLine());
-            Console.Write($"Digite o terceiro valor:");
-            int valueThree = int.Parse(Console.ReadLine());
+            decimal valueTwo = Convert.ToDecimal(Console.ReadLine());
 
-            Console.Write($"Valores digitados: {valueOne}, {valueTwo}, {valueThree}");
+            while (valueOne == valueTwo)
+            {
+                Console.Write("Os valores são iguais, digite um valor diferente para o segundo valor: ");
+                valueTwo = Convert.ToDecimal(Console.ReadLine());
+            }
 
-            int temp = valueTwo;
-            valueTwo = valueThree;
-            valueThree = valueOne;
-            valueOne = temp;
+            decimal soma = valueOne + valueTwo;
+            decimal subtracao = valueOne - valueTwo;
+            decimal multiplicacao = valueOne * valueTwo;
 
-            Console.Write($"\nValores após a troca: {valueOne}, {valueTwo}, {valueThree}");
+            Console.WriteLine($"Valor da soma dos dois valores: {soma}");
+            Console.WriteLine($"Valor da sutração dos dois valores: {subtracao}");
+            Console.WriteLine($"Valor da multiplicação dos dois valores: {multiplicacao}");
+
+            if (valueTwo == 0)
+            {
+                Console.WriteLine("Não é possível realizar a divisão por zero.");
+            }
+            else
+            {
+                decimal divisao = valueOne / valueTwo;
+                Console.WriteLine($"Valor da divisão dos dois valores: {divisao}");
+            }
+
         }
     }
 }

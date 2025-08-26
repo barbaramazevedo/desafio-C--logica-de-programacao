@@ -12,3 +12,4 @@ C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desa
 C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\Desafio1.pdb
 C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\Desafio1.genruntimeconfig.cache
 C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\ref\Desafio1.dll
+C:\Users\barbara.azevedo.DBSERVER\Documents\Mentoria 02\08-Desafio\Desafio1\Desafio1\obj\Debug\net8.0\Desafio1.sourcelink.json
