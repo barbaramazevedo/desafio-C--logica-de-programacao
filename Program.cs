@@ -19,10 +19,6 @@
             decimal subtracao = valueOne - valueTwo;
             decimal multiplicacao = valueOne * valueTwo;
 
-
-
-            
-
             Console.WriteLine($"Digite o tipo de operação que deseja realizar: \n 1 - Soma \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão");
             int operacao = Convert.ToInt32(Console.ReadLine());
             switch (operacao)
