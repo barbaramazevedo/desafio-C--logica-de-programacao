@@ -4,21 +4,22 @@
     {
         static void Main(string[] args)
         {
-            Console.Write($"Digite um valor:");
-            decimal variavel = Convert.ToDecimal(Console.ReadLine());
+            Console.Write($"Digite a hora inicial do jogo:");
+            int horaInicial = int.Parse(Console.ReadLine());
 
-            if (variavel > 0)
+            Console.Write($"Digite a hora final do jogo:");
+            int horaFinal = int.Parse(Console.ReadLine());
+
+            int duracao;
+            if (horaInicial < horaFinal)
             {
-                Console.WriteLine($"O valor {variavel} é positivo.");
-            }
-            else if (variavel < 0)
-            {
-                Console.WriteLine($"O valor {variavel} é negativo.");
+                duracao = horaFinal - horaInicial;
             }
             else
             {
-                Console.WriteLine($"O valor é zero.");
+                duracao = 24 - horaInicial + horaFinal;
             }
+            Console.WriteLine($"O jogo durou {duracao} hora(s)");
         }
     }
 }
